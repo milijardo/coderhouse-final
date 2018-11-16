@@ -3,40 +3,51 @@ body
 	background-color:#EADCA4;
 	height:400px;
 	width:100%;
+	display:block;
+	margin:0;
+
+}
+
+header
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	background:gray;
+	border-bottom:solid 2px;
 
 }
 
 #title-jj
 {
-	display:flex;
-	flex-direction:column;
+	flex: 1 1 50%;
+	text-align: left
 
 }
 
 #redes-sociales
 {
-	display:flex;
-	flex-direction:column;
-
+	flex: 1 1 10%;
+	text-align: right;
 }
 
 
 #menu-col
 {
-	display:flex;
-	flex-direction:column;
+	flex: 1 1 100%;
 }
 
 
 #redes
 {
-
-
+	float:right;
+	display:flex;
+	padding:20px;
 }
+
 
 #menu-prin
 {	
-	border-bottom:solid 2px;
 	display:block;
 	padding-bottom:45px;
 	padding-left:5px;
@@ -133,26 +144,26 @@ margin:auto;}
 
 .fa-facebook-square
 {
-	font-size:50px;
+	font-size:40px;
 	color: blue;
 	float:left;
-	padding: 10px;
+	padding: 8px;
 
 }
 
 .fa-twitter
 {
-	font-size:50px;
+	font-size:40px;
 	color:#00A4CC;
 	float:left;
-	padding: 10px;
+	padding: 8px;
 
 }
 
 
 .fa-spotify
 {
-	font-size:50px;
+	font-size:40px;
 	color:#9ACC2F;
 	float:left;
 	padding: 10px;
@@ -162,7 +173,7 @@ margin:auto;}
 
 .fa-instagram
 {
-	font-size:50px;
+	font-size:40px;
 	color: #CA2267;
 	padding: 10px;
 	float:left;
@@ -187,7 +198,8 @@ h1
 	font-family:sans-serif;
 	line-height:20px;
 	letter-spacing:3px;
-	padding:2px;
+	padding:15px;
+	padding-top:20px;
 }
 
 h4
@@ -356,3 +368,46 @@ footer
 	height:80%;
 	margin-top:60%;
 }
+
+
+
+
+
+
+/* regla para Mobile Styles */
+
+@media only screen and {max-width: 400px}
+
+#menu-prin
+{
+	padding-bottom:25px;
+}
+
+#menu-prin li
+{
+	color:black;
+	float:none;
+}
+
+.menu
+{
+	padding:10px;
+}
+
+#menu-prin li ul
+{
+	width:calc(100% - 25px);
+	position:relative;
+}
+
+
+
+/* regla para Tablet Styles */
+
+@media only screen and {min-width: 401px}
+
+
+/* regla para Screen Styles */
+
+@media only screen and {min-width: 961px}
+
