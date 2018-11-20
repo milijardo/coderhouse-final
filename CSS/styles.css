@@ -13,7 +13,7 @@ header
 	display:flex;
 	flex-direction:row;
 	flex-wrap: wrap;
-	background:gray;
+	background: #909392;
 	border-bottom:solid 2px;
 
 }
@@ -138,8 +138,7 @@ header
 #titulo{text-align-left;}
 
 video.jj.mp4
-{height: 60px;
-width: 100px;
+{height:100% ;
 margin:auto;}
 
 .fa-facebook-square
@@ -151,6 +150,16 @@ margin:auto;}
 
 }
 
+
+
+.fa-facebook-square:hover
+{
+	transform: scale(1.05,1.05);
+	transition: ease all 100ms;
+	background:white;
+}
+
+
 .fa-twitter
 {
 	font-size:40px;
@@ -159,6 +168,15 @@ margin:auto;}
 	padding: 8px;
 
 }
+
+.fa-twitter:hover
+{
+	transform: scale(1.05,1.05);
+	transition: ease all 100ms;
+	background:white;
+}
+
+
 
 
 .fa-spotify
@@ -170,6 +188,14 @@ margin:auto;}
 
 }
 
+.fa-spotify:hover
+{
+	transform: scale(1.05,1.05);
+	transition: ease all 100ms;
+	background:white;
+}
+
+
 
 .fa-instagram
 {
@@ -177,6 +203,14 @@ margin:auto;}
 	color: #CA2267;
 	padding: 10px;
 	float:left;
+
+}
+
+.fa-instagram:hover
+{
+	transform: scale(1.05,1.05);
+	transition: ease all 100ms;
+	background:white;
 
 }
 
@@ -257,12 +291,21 @@ h6
 	color:gray; font-size:15px;
 }
 
-
+h3
+{
+	border-bottom: solid 2px;
+	padding-left:10px;
+}
 
 #ver
 {
 	color:red;
 	text-decoration:underline;
+	font-weight: bold;
+	flex: 1 1 20%;
+	text-align: right;
+	padding-right:15px;
+
 }
 
 
@@ -339,18 +382,55 @@ article
 }
 
 
+.discografia-fotos
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+
+
 
 .img-tapa
 {
 	width:90%;
-	height: 33%;
 	padding-top:10px;
 	text-align:center;
 	padding-right:2px;
 	padding-left:5px;
 	margin:0;
+	height: 367px;
+	width: 295px;
 	
 }
+
+.item1
+{
+	flex:1 1 20%;	
+}
+
+
+.item2
+{
+	flex:1 1 20%;	
+}
+
+.item3
+{
+	flex:1 1 20%;	
+}
+
+.item4
+{
+	flex:1 1 20%;	
+}
+
+
+
+
+
+
 
 .video
 {
@@ -376,7 +456,19 @@ footer
 
 /* regla para Mobile Styles */
 
-@media only screen and {max-width: 400px}
+@media only screen and (max-width: 400px)
+{
+
+
+
+h1
+{
+	font-size:30px;
+	padding:20px;
+	padding-top:30px;
+	margin:0;
+
+}
 
 #menu-prin
 {
@@ -394,6 +486,8 @@ footer
 	padding:10px;
 }
 
+
+
 #menu-prin li ul
 {
 	width:calc(100% - 25px);
@@ -401,13 +495,76 @@ footer
 }
 
 
+.fa-facebook-square
+{
+	font-size:30px;
+}
+
+.fa-twitter
+{
+	font-size:30px;
+	padding: 8px;
+
+}
+
+
+.fa-spotify
+{
+	font-size:30px;
+	padding: 8px;
+
+}
+
+
+.fa-instagram
+{
+	font-size:30px;
+	padding: 8px;
+}
+
+
+#chat
+{
+	position:fixed;
+	top:220px;
+	font-size:15px;
+	display:grid;  
+   	grid-template-columns: 10px 10px;
+   	grid-template-rows: 30px 100px;
+   	text-align:center;
+   	padding:none;
+}
+
+}
+
+
+
+	
+
 
 /* regla para Tablet Styles */
 
-@media only screen and {min-width: 401px}
+@media only screen and (min-width: 401px)
+{
 
+	h1
+	{
+		font-size:30px;
+	}
+
+}
 
 /* regla para Screen Styles */
 
-@media only screen and {min-width: 961px}
+@media only screen and (min-width: 961px)
+{
+
+	h1
+	{
+		font-size:30px;
+	}
+
+}
+
+
 
