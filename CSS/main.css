@@ -36,6 +36,9 @@ header {
   margin-left: 5px;
   margin-right: 20px;
   font-family: sans-serif; }
+  @media only screen and (max-width: 400px) {
+    #menu-prin {
+      padding-bottom: 25px; } }
 
 #menu-prin a {
   color: black; }
@@ -43,13 +46,7 @@ header {
 #menu-prin li {
   float: left;
   position: relative;
-  color: black; }
-
-#menu-prin li:hover {
-  background-color: #3BB2F4;
-  color: white; }
-
-#menu-prin li a:hover {
+  color: black;
   background-color: #3BB2F4;
   color: white; }
 
@@ -57,17 +54,25 @@ header {
   display: none;
   position: absolute;
   left: 0;
-  padding: 10px; }
-
-#menu-prin li:hover > ul {
-  margin-top: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  left: 0;
-  background: #3BB2F4;
-  padding: 15px;
-  color: white; }
+  padding: 10px;
+  /* regla para Mobile Styles */ }
+  #menu-prin li ulhover {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    left: 0;
+    background: #3BB2F4;
+    padding: 15px;
+    color: white; }
+  @media only screen and (max-width: 400px) {
+    #menu-prin li ul {
+      padding: 1px; } }
+  @media only screen and (max-width: 400px) {
+    #menu-prin li ul {
+      width: calc(100% - 25px);
+      position: relative;
+      text-align: left; } }
 
 #menu-prin li ul li {
   margin: auto;
@@ -77,17 +82,20 @@ header {
 .menu {
   font-family: sans-serif;
   padding: 20px;
-  text-align: left; }
+  text-align: left;
+  /* regla para Mobile Styles */ }
+  @media only screen and (max-width: 400px) {
+    .menu {
+      padding: 10px; } }
 
 .sub {
   margin: 0;
   padding: 0;
   list-style: none; }
-
-.sub li {
-  margin: 0;
-  padding: 0;
-  padding-top: 10px; }
+  .sub li {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px; }
 
 #titulo {
   text-align: left; }
@@ -100,45 +108,60 @@ video.jj.mp4 {
   font-size: 40px;
   color: blue;
   float: left;
-  padding: 8px; }
-
-.fa-facebook-square:hover {
-  transform: scale(1.05, 1.05);
-  transition: ease all 100ms;
-  background: white; }
+  padding: 8px;
+  /* regla para Mobile Styles */ }
+  .fa-facebook-squarehover {
+    transform: scale(1.05, 1.05);
+    transition: ease all 100ms;
+    background: white; }
+  @media only screen and (max-width: 400px) {
+    .fa-facebook-square {
+      font-size: 30px; } }
 
 .fa-twitter {
   font-size: 40px;
   color: #00A4CC;
   float: left;
-  padding: 8px; }
-
-.fa-twitter:hover {
-  transform: scale(1.05, 1.05);
-  transition: ease all 100ms;
-  background: white; }
+  padding: 8px;
+  /* regla para Mobile Styles */ }
+  .fa-twitterhover {
+    transform: scale(1.05, 1.05);
+    transition: ease all 100ms;
+    background: white; }
+  @media only screen and (max-width: 400px) {
+    .fa-twitter {
+      font-size: 30px;
+      padding: 8px; } }
 
 .fa-spotify {
   font-size: 40px;
   color: #9ACC2F;
   float: left;
-  padding: 10px; }
-
-.fa-spotify:hover {
-  transform: scale(1.05, 1.05);
-  transition: ease all 100ms;
-  background: white; }
+  padding: 10px;
+  /* regla para Mobile Styles */ }
+  .fa-spotifyhover {
+    transform: scale(1.05, 1.05);
+    transition: ease all 100ms;
+    background: white; }
+  @media only screen and (max-width: 400px) {
+    .fa-spotify {
+      font-size: 30px;
+      padding: 8px; } }
 
 .fa-instagram {
   font-size: 40px;
   color: #CA2267;
   padding: 10px;
-  float: left; }
-
-.fa-instagram:hover {
-  transform: scale(1.05, 1.05);
-  transition: ease all 100ms;
-  background: white; }
+  float: left;
+  /* regla para Mobile Styles */ }
+  .fa-instagramhover {
+    transform: scale(1.05, 1.05);
+    transition: ease all 100ms;
+    background: white; }
+  @media only screen and (max-width: 400px) {
+    .fa-instagram {
+      font-size: 30px;
+      padding: 8px; } }
 
 a {
   text-decoration: none; }
@@ -152,27 +175,28 @@ h1 {
   line-height: 20px;
   letter-spacing: 3px;
   padding: 15px;
-  padding-top: 20px; }
-
-/* regla para Mobile Styles */
-@media only screen and (max-width: 400px) {
-  h1 {
-    font-size: 30px;
-    padding: 20px;
-    padding-top: 30px;
-    margin: 0; }
-  /* regla para Tablet Styles */ }
-
-@media only screen and (max-width: 400px) and (min-width: 401px) {
-  h1 {
-    font-size: 30px; } }
-
-@media only screen and (max-width: 400px) {
+  padding-top: 20px;
+  /* regla para Mobile Styles */
+  /* regla para Tablet Styles */
   /* regla para Screen Styles */ }
+  @media only screen and (max-width: 400px) {
+    h1 {
+      font-size: 30px;
+      padding: 20px;
+      padding-top: 30px;
+      margin: 0; } }
+  @media only screen and (min-width: 401px) {
+    h1 {
+      font-size: 30px; } }
+  @media only screen and (min-width: 961px) {
+    h1 {
+      font-size: 30px; } }
 
-@media only screen and (max-width: 400px) and (min-width: 961px) {
-  h1 {
-    font-size: 30px; } }
+h3 {
+  border-bottom: solid 2px gray;
+  padding-left: 10px;
+  color: #0072BF;
+  padding-bottom: 10px; }
 
 h4 {
   color: #0072BF;
@@ -181,13 +205,13 @@ h4 {
   letter-spacing: 3px;
   font-size: 20px; }
 
-#jj {
-  color: red;
-  font-size: 20px; }
-
 h6 {
   color: blue;
   font-size: 15px; }
+
+#jj {
+  color: red;
+  font-size: 20px; }
 
 .para1 {
   font-weight: bold;
@@ -201,21 +225,25 @@ h6 {
   color: white;
   background: blue;
   padding: 10px;
-  font-family: arial; }
-
-#chat:hover {
-  transform: scale(1.03, 1.03);
-  transition: ease all 100ms; }
+  font-family: arial;
+  /* regla para Mobile Styles */ }
+  #chathover {
+    transform: scale(1.03, 1.03);
+    transition: ease all 100ms; }
+  @media only screen and (max-width: 400px) {
+    #chat {
+      position: fixed;
+      top: 220px;
+      font-size: 15px;
+      display: grid;
+      grid-template-columns: 10px 10px;
+      grid-template-rows: 30px 100px;
+      text-align: center;
+      padding: none; } }
 
 #origen {
   color: gray;
   font-size: 15px; }
-
-h3 {
-  border-bottom: solid 2px gray;
-  padding-left: 10px;
-  color: #0072BF;
-  padding-bottom: 10px; }
 
 #ver {
   color: red;
@@ -305,43 +333,5 @@ article {
 footer {
   border-top: solid 1px;
   padding-top: 30px;
-  margin: auto;
   height: 80%;
-  margin-top: 60%; }
-
-/* regla para Mobile Styles */
-@media only screen and (max-width: 400px) {
-  #menu-prin {
-    padding-bottom: 25px; }
-  #menu-prin li {
-    color: black;
-    float: none;
-    width: 150px; }
-  .menu {
-    padding: 10px; }
-  #menu-prin li ul {
-    width: calc(100% - 25px);
-    position: relative;
-    text-align: left; }
-  #menu-prin li:hover > ul {
-    padding: 1px; }
-  .fa-facebook-square {
-    font-size: 30px; }
-  .fa-twitter {
-    font-size: 30px;
-    padding: 8px; }
-  .fa-spotify {
-    font-size: 30px;
-    padding: 8px; }
-  .fa-instagram {
-    font-size: 30px;
-    padding: 8px; }
-  #chat {
-    position: fixed;
-    top: 220px;
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: 10px 10px;
-    grid-template-rows: 30px 100px;
-    text-align: center;
-    padding: none; } }
+  margin: auto; }
