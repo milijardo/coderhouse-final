@@ -1,3 +1,586 @@
-body{
+body
+{
+	background-color:#EADCA4;
+	height:400px;
+	width:100%;
+	display:block;
+	margin:0;
+}
+
+header
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	background: #909392;
+	border-bottom:solid 2px;
+}
+
+#title-jj
+{
+	flex: 1 1 50%;
+	text-align: left
+
+}
+
+#redes-sociales
+{
+	flex: 1 1 10%;
+	text-align: right;
+}
+
+
+#menu-col
+{
+	flex: 1 1 100%;
+}
+
+
+#redes
+{
+	float:right;
+	display:flex;
+	padding:20px;
+}
+
+
+#menu-prin
+{	
+	display:block;
+	padding-bottom:45px;
+	padding-left:5px;
+	margin:auto;
+	margin-left:5px;
+	margin-right:20px;
+	font-family:sans-serif;
+
+@media only screen and (max-width: 400px)
+{
+#menu-prin
+{
+	padding-bottom:25px;
+}
+
+}
+
+
+#menu-prin a
+{
 	color:black;
+}
+
+
+#menu-prin li
+{
+	float:left;
+	position:relative;
+	color:black;
+
+
+/* regla para Mobile Styles */
+@media only screen and (max-width: 400px)
+{
+#menu-prin li:hover > ul
+{
+	padding:1px;
+}
+
+
+}
+
+#menu-prin li a:hover
+{
+	background-color: #3BB2F4;
+	color:white;
+}
+
+#menu-prin li ul
+{
+	display:none;
+	position:absolute;
+	left:0;
+	padding:10px;
+
+@media only screen and (max-width: 400px)
+{
+
+#menu-prin li ul
+{
+	width:calc(100% - 25px);
+	position:relative;
+	text-align:left;
+}
+
+}
+
+#menu-prin li:hover > ul
+{
+	margin-top: 5px;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	left:0;
+	background:#3BB2F4;
+	padding:15px;
+	color:white;
+}
+
+
+
+#menu-prin li ul li
+{
+	margin:auto;
+	padding:0;
+	padding-left:1px;
+}
+
+.menu
+{ 
+	font-family:sans-serif; 
+	padding:20px;
+	text-align: left;
+
+
+/* regla para Mobile Styles */
+
+@media only screen and (max-width: 400px)
+{
+
+.menu
+{
+	padding:10px;
+}
+
+}
+
+
+.sub
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.sub li
+{
+	margin:0;
+	padding:0;
+	padding-top:10px;
+}
+
+
+#titulo{text-align:left;}
+
+video.jj.mp4
+{height:100% ;
+margin:auto;}
+
+.fa-facebook-square
+{
+	font-size:40px;
+	color: blue;
+	float:left;
+	padding: 8px;
+
+/* regla para Mobile Styles */
+
+@media only screen and (max-width: 400px)
+{
+
+.fa-facebook-square
+{
+	font-size:30px;
+}
+}
+
+
+
+.fa-facebook-square:hover
+{
+	transform: scale(1.05,1.05);
+	transition: ease all 100ms;
+	background:white;
+}
+
+
+.fa-twitter
+{
+	font-size:40px;
+	color:#00A4CC;
+	float:left;
+	padding: 8px;
+
+/* regla para Mobile Styles */
+
+@media only screen and (max-width: 400px)
+{
+
+.fa-twitter
+{
+	font-size:30px;
+	padding: 8px;
+
+}
+
+
+}
+
+.fa-twitter:hover
+{
+	transform: scale(1.05,1.05);
+	transition: ease all 100ms;
+	background:white;
+}
+
+
+
+
+.fa-spotify
+{
+	font-size:40px;
+	color:#9ACC2F;
+	float:left;
+	padding: 10px;
+
+
+/* regla para Mobile Styles */
+
+@media only screen and (max-width: 400px)
+{
+
+.fa-spotify
+{
+	font-size:30px;
+	padding: 8px;
+
+}
+
+}
+
+.fa-spotify:hover
+{
+	transform: scale(1.05,1.05);
+	transition: ease all 100ms;
+	background:white;
+}
+
+
+
+.fa-instagram
+{
+	font-size:40px;
+	color: #CA2267;
+	padding: 10px;
+	float:left;
+
+
+/* regla para Mobile Styles */
+
+@media only screen and (max-width: 400px)
+{
+
+.fa-instagram
+{
+	font-size:30px;
+	padding: 8px;
+}
+
+}
+
+.fa-instagram:hover
+{
+	transform: scale(1.05,1.05);
+	transition: ease all 100ms;
+	background:white;
+
+}
+
+
+a
+{
+	text-decoration:none;
+}
+
+
+li
+{
+	list-style: none;
+}
+
+h1
+{
+	color:#0072BF;
+	font-family:sans-serif;
+	line-height:20px;
+	letter-spacing:3px;
+	padding:15px;
+	padding-top:20px;
+}
+
+/* regla para Mobile Styles */
+@media only screen and (max-width: 400px)
+{
+
+
+
+h1
+{
+	font-size:30px;
+	padding:20px;
+	padding-top:30px;
+	margin:0;
+}
+
+
+
+
+/* regla para Tablet Styles */
+
+@media only screen and (min-width: 401px)
+{
+
+	h1
+	{
+		font-size:30px;
+	}
+
+}
+
+/* regla para Screen Styles */
+
+@media only screen and (min-width: 961px)
+{
+
+	h1
+	{
+		font-size:30px;
+	}
+
+}
+
+
+
+
+}
+
+h4
+{
+
+	color:#0072BF;
+	font-family:sans-serif;
+	line-height:20px;
+	letter-spacing:3px;
+	font-size:20px
+}
+
+
+
+
+
+#jj
+{
+	color: red; font-size:20px;
+}
+
+h6
+{
+	color:blue; font-size:15px;
+}
+
+.para1
+{ 
+	font-weight:bold;
+	float:left;
+	padding:4px;
+}
+
+
+#chat
+{
+	position:fixed;
+	top:220px;
+	right:10px;
+	color:white;
+	background:blue;
+	padding:10px;
+	font-family: arial;
+
+
+/* regla para Mobile Styles */
+
+@media only screen and (max-width: 400px)
+{
+
+#chat
+{
+	position:fixed;
+	top:220px;
+	font-size:15px;
+	display:grid;  
+   	grid-template-columns: 10px 10px;
+   	grid-template-rows: 30px 100px;
+   	text-align:center;
+   	padding:none;
+}
+
+}
+
+
+#chat:hover
+{
+	transform: scale(1.03,1.03);
+	transition: ease all 100ms;
+}
+
+
+#origen
+{
+	color:gray; font-size:15px;
+}
+
+h3
+{
+	border-bottom: solid 2px gray;
+	padding-left:10px;
+	color: #0072BF;
+	padding-bottom: 10px;
+}
+
+#ver
+{
+	color: red;
+	text-decoration:underline;
+	font-weight: bold;
+	flex: 1 1 20%;
+	text-align: right;
+	padding-right:15px;
+
+}
+
+
+
+section
+{
+	display:block;
+	padding:40px;
+	width: calc(100%-80px);
+}
+
+article
+{
+	margin-left:5px;
+	display:inline-block;
+}
+
+.title-tip1
+{
+	background-color:#82A9BC;
+	padding-left:5px;
+	text-align:justify;
+}	
+
+.title-tip2
+{
+	background-color:#82A9BC;
+	padding-left:5px;
+	text-align:justify;
+}	
+
+.title-tip3
+{
+	background-color:#82A9BC;
+	padding-left:5px;
+	text-align:justify;
+}	
+
+
+
+#tips1
+{
+	width: calc(33.333%-3px);
+	float:left;
+	border-right:dotted 3px #0070A8;
+	margin:auto;
+	padding-left:5px;
+	padding-right: 10px;
+}
+
+
+#tips2
+{
+	width: calc(33.333%-3px);
+	float:left;
+	border-right:dotted 3px #0070A8;
+	margin:auto;
+	padding-left:5px;
+	padding-right: 10px;
+}
+
+#tips3
+{
+	width: calc(33.333%-3px);
+	float:left;
+	margin:auto;
+	padding-left:5px;
+	padding-right: 10px;
+}
+
+
+.discografia-fotos
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+
+
+
+.img-tapa
+{
+	width:90%;
+	padding-top:10px;
+	text-align:center;
+	padding-right:2px;
+	padding-left:5px;
+	margin:0;
+	height: 367px;
+	width: 295px;
+	
+}
+
+.item1
+{
+	flex:1 1 20%;	
+}
+
+
+.item2
+{
+	flex:1 1 20%;	
+}
+
+.item3
+{
+	flex:1 1 20%;	
+}
+
+.item4
+{
+	flex:1 1 20%;	
+}
+
+
+.video
+{
+	width:30%;
+}
+
+
+footer
+{
+	border-top:solid 1px;
+	padding-top: 30px;
+	height:80%;
+	margin:auto;
 }

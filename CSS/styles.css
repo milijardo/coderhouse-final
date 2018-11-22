@@ -293,13 +293,15 @@ h6
 
 h3
 {
-	border-bottom: solid 2px;
+	border-bottom: solid 2px gray;
 	padding-left:10px;
+	color: #0072BF;
+	padding-bottom: 10px;
 }
 
 #ver
 {
-	color:red;
+	color: red;
 	text-decoration:underline;
 	font-weight: bold;
 	flex: 1 1 20%;
@@ -479,6 +481,7 @@ h1
 {
 	color:black;
 	float:none;
+	width:150px;
 }
 
 .menu
@@ -492,6 +495,12 @@ h1
 {
 	width:calc(100% - 25px);
 	position:relative;
+	text-align:left;
+}
+
+#menu-prin li:hover > ul
+{
+	padding:1px;
 }
 
 
