@@ -1,6 +1,5 @@
 body {
   background-color: #EADCA4;
-  height: 400px;
   width: 100%;
   display: block;
   margin: 0; }
@@ -9,8 +8,9 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background: #909392;
-  border-bottom: solid 2px; }
+  background: white;
+  border-bottom: solid 2px gray;
+  margin-top: 40px; }
 
 #title-jj {
   flex: 1 1 50%;
@@ -26,7 +26,9 @@ header {
 #redes {
   float: right;
   display: flex;
-  padding: 20px; }
+  padding-top: 10px;
+  padding-right: 15px;
+  margin: 0; }
 
 #menu-prin {
   display: block;
@@ -46,9 +48,9 @@ header {
 #menu-prin li {
   float: left;
   position: relative;
-  color: black;
-  background-color: #3BB2F4;
-  color: white; }
+  color: black; }
+  #menu-prin li:hover {
+    color: white; }
 
 #menu-prin li ul {
   display: none;
@@ -56,15 +58,6 @@ header {
   left: 0;
   padding: 10px;
   /* regla para Mobile Styles */ }
-  #menu-prin li ulhover {
-    margin-top: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    left: 0;
-    background: #3BB2F4;
-    padding: 15px;
-    color: white; }
   @media only screen and (max-width: 400px) {
     #menu-prin li ul {
       padding: 1px; } }
@@ -72,7 +65,20 @@ header {
     #menu-prin li ul {
       width: calc(100% - 25px);
       position: relative;
-      text-align: left; } }
+      float: left; } }
+
+#menu-prin li:hover {
+  background: #3BB2F4;
+  color: white; }
+  #menu-prin li:hover ul {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    left: 0;
+    background: #3BB2F4;
+    padding: 60px;
+    color: white; }
 
 #menu-prin li ul li {
   margin: auto;
@@ -83,6 +89,8 @@ header {
   font-family: sans-serif;
   padding: 20px;
   text-align: left;
+  padding-right: 20px;
+  padding-left: 15px;
   /* regla para Mobile Styles */ }
   @media only screen and (max-width: 400px) {
     .menu {
@@ -110,7 +118,7 @@ video.jj.mp4 {
   float: left;
   padding: 8px;
   /* regla para Mobile Styles */ }
-  .fa-facebook-squarehover {
+  .fa-facebook-square:hover {
     transform: scale(1.05, 1.05);
     transition: ease all 100ms;
     background: white; }
@@ -124,7 +132,7 @@ video.jj.mp4 {
   float: left;
   padding: 8px;
   /* regla para Mobile Styles */ }
-  .fa-twitterhover {
+  .fa-twitter:hover {
     transform: scale(1.05, 1.05);
     transition: ease all 100ms;
     background: white; }
@@ -139,7 +147,7 @@ video.jj.mp4 {
   float: left;
   padding: 10px;
   /* regla para Mobile Styles */ }
-  .fa-spotifyhover {
+  .fa-spotify:hover {
     transform: scale(1.05, 1.05);
     transition: ease all 100ms;
     background: white; }
@@ -154,7 +162,7 @@ video.jj.mp4 {
   padding: 10px;
   float: left;
   /* regla para Mobile Styles */ }
-  .fa-instagramhover {
+  .fa-instagram:hover {
     transform: scale(1.05, 1.05);
     transition: ease all 100ms;
     background: white; }
@@ -205,13 +213,35 @@ h4 {
   letter-spacing: 3px;
   font-size: 20px; }
 
-h6 {
-  color: blue;
-  font-size: 15px; }
-
 #jj {
   color: red;
-  font-size: 20px; }
+  font-size: 20px;
+  padding: 5px;
+  width: auto; }
+
+#formulario {
+  border: 1px solid gray;
+  margin: auto;
+  padding-top: 10px;
+  margin-top: 150px;
+  font-size: 15px; }
+
+.formulario-borde {
+  width: auto; }
+
+.formulario-mail {
+  width: auto; }
+
+.form-mail {
+  display: inline-block;
+  float: left;
+  margin-right: 50px; }
+
+.reset {
+  font-size: 11px; }
+
+.submit {
+  font-size: 11px; }
 
 .para1 {
   font-weight: bold;
@@ -220,15 +250,19 @@ h6 {
 
 #chat {
   position: fixed;
-  top: 220px;
-  right: 10px;
+  right: 15px;
+  padding: 5px;
   color: white;
-  background: blue;
-  padding: 10px;
-  font-family: arial;
+  background: #43C554;
+  border-radius: 100px;
+  padding: 8px;
+  padding-bottom: 3px;
+  z-index: 999;
+  font-size: 25px;
+  line-height: normal;
   /* regla para Mobile Styles */ }
-  #chathover {
-    transform: scale(1.03, 1.03);
+  #chat:hover {
+    transform: scale(1.2);
     transition: ease all 100ms; }
   @media only screen and (max-width: 400px) {
     #chat {
@@ -309,11 +343,18 @@ article {
   width: 90%;
   padding-top: 10px;
   text-align: center;
-  padding-right: 2px;
-  padding-left: 5px;
   margin: 0;
-  height: 367px;
-  width: 295px; }
+  height: 280px;
+  width: 210px; }
+
+.carousel-album {
+  padding-top: 40px;
+  height: 300px;
+  width: 30%;
+  text-align: center; }
+
+.carousel-control-next-icon {
+  color: red; }
 
 .item1 {
   flex: 1 1 20%; }
@@ -331,7 +372,24 @@ article {
   width: 30%; }
 
 footer {
-  border-top: solid 1px;
-  padding-top: 30px;
-  height: 80%;
-  margin: auto; }
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  footer #footer-copyright {
+    flex: 1 1 10%;
+    text-align: left;
+    display: inline-block; }
+  footer #politicas {
+    text-align: left;
+    float: left; }
+  footer #footer-url {
+    font-size: 15px;
+    text-align: right;
+    padding-right: 15px;
+    float: right; }
