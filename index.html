@@ -2,6 +2,8 @@
 <html>
     <head>
 
+        <meta charset="UTF-8">
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -20,7 +22,7 @@
 
 
         <link rel="stylesheet" href="css/main.css" />
-        <meta charset="UTF-8">
+    
         <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
         <!-- version anterior <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
 
@@ -65,11 +67,11 @@
       <li class="nav-item">
         <a class="nav-link" href="https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3">Música</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <div class="dropdown-hover"> </div>
+      <li class="nav-item dropdown-hover  dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
           Albums
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">2017. All the light above it too</a>
           <a class="dropdown-item" href="#">2013. From here to now to you 
           </a>
@@ -86,6 +88,10 @@
       <li class="nav-item">
         <a class="nav-link disabled" href="tipsviajes.html">Tips para Viajes</a>
       </li>
+       <li class="nav-item contacto">
+        <a class="nav-link disabled" href="contacto.html">Contacto</a>
+      </li>
+
     </ul>
     
   </div>
@@ -200,27 +206,26 @@
   <div class="busqueda">
         <form class="form-inline">
       <input class="form-control" type="search" placeholder="¿QUÉ ESTAS BUSCANDO?" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
+      <button class="btn btn-outline-success color-search" type="submit">Search</button>
     </form>
 
   </div>
 
-            <div id="chat"> <ion-icon name="logo-whatsapp"></ion-icon> </div>
+            <div id="chat"> <ion-icon name='logo-whatsapp'></ion-icon> </div>
 
 
            <div class="banner-home">
-
-                    <img src="Jack_Jonhson_258117318.jpg" alt="banner-home" class="banner-home1"/>
-                    
+                    <h1> Jack <br> Johnson </h1> 
+            </div>
+ 
+  
             </div>
 
         
 
          
         </br>
-        </br>
-        </br>
-        </br>
+
 
     </div>
 
@@ -368,7 +373,6 @@
 	        <i> Copyright Jack Johnson & Co </i>
 	       
 	        <br>
-            <br>
 
 	           <div id="politicas">
 	               <b> Políticas y Privacidades </b>
@@ -405,7 +409,6 @@
              <code>video</code>
          </video>
 
-         <br>
          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
        </div>
       </div>
