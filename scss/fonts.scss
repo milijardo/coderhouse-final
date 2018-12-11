@@ -1,0 +1,227 @@
+$font-identity: 'roboto', sans-serif;
+
+.nav-link
+{
+	font-weight: bold;
+	font-size:15px;
+	font-family: $font-identity !important;
+	font-weight: bold !important;
+}
+
+.banner-home
+{
+	.quote
+	{
+		font-family: 'Poppins', sans-serif !important;
+	   	font-size: 18px;
+	   	font-style: oblique !important;
+	}
+}
+
+
+
+.frase2
+{
+	font-size: 36px !important;
+}
+
+h1
+{
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif !important;
+	font-size:50px;
+}
+
+
+.fa-facebook-square
+{
+	font-size:30px;
+
+		/* regla para Mobile Styles */
+	@media only screen and (max-width: 400px)
+	{
+		font-size:20px;
+	}
+
+}
+
+.fa-twitter
+{
+	font-size:30px;
+
+	/* regla para Mobile Styles */
+	@media only screen and (max-width: 400px)
+	{
+		font-size:20px;
+	}
+
+}
+
+
+.fa-spotify
+{
+	font-size:30px;
+	/* regla para Mobile Styles */
+
+	@media only screen and (max-width: 400px)
+	{	
+		font-size:20px;
+	}
+
+}
+
+
+
+
+.fa-instagram
+{
+	font-size:30px;
+
+	/* regla para Mobile Styles */
+
+	@media only screen and (max-width: 400px)
+	{
+		font-size:20px;
+	}
+
+}
+
+h3
+{
+	font-weight: bold;
+	font-family: $font-identity !important;
+}
+
+
+#ver
+{
+	font-weight: bold;
+	font-family: $font-identity !important;
+}
+
+h4
+{
+	font-family:sans-serif;
+	font-size:20px
+}
+
+#jj
+{ 
+	font-size:20px;
+}
+
+#formulario
+{
+	font-size: 15px;
+}
+
+.reset
+{
+	font-size: 11px;
+}
+.submit
+{
+	font-size:11px;
+}
+
+.para1
+{ 
+	font-weight:bold;
+
+}
+
+
+#chat
+{
+	font-size:25px;
+
+	/* regla para Mobile Styles */
+	@media only screen and (max-width: 400px)
+	{
+		font-size:17px;
+	}
+}
+
+#origen
+{
+	font-size:15px;
+}
+
+.title-tip
+{
+	font-size:20px !important;
+	font-weight: bold;
+}
+
+#tips1
+{
+	ul{
+		font-family: $font-identity !important;
+		font-size: 15px;
+	}
+	
+}
+
+
+#tips2
+{
+	ul{
+
+		font-family: $font-identity !important;
+		font-size: 15px;
+	}
+}
+
+#tips3
+{
+	ul{
+		font-family: $font-identity !important;
+		font-size: 15px;
+	}
+}
+
+
+.form-album
+{
+	font-family: $font-identity !important;
+	font-weight: bold;
+}
+
+.form-contacto
+{
+	font-family: $font-identity !important;
+	&:hover{
+		font-weight:bold;
+		font-size: 20px;
+	}
+}
+
+.form-tittle
+{
+	font-family: $font-identity !important;
+	font-weight:bold;
+	font-size:15px;
+}
+
+
+.contacto-titulo
+{
+	font-family: $font-identity !important;
+	font-size: 20px;
+}
+
+
+footer
+{
+	font-family: $font-identity !important;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+

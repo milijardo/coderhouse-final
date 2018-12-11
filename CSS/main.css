@@ -62,6 +62,129 @@ h4 {
 .form-contacto {
   color: red; }
 
+.nav-link {
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "roboto", sans-serif !important;
+  font-weight: bold !important; }
+
+.banner-home .quote {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 18px;
+  font-style: oblique !important; }
+
+.frase2 {
+  font-size: 36px !important; }
+
+h1 {
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 50px; }
+
+.fa-facebook-square {
+  font-size: 30px;
+  /* regla para Mobile Styles */ }
+  @media only screen and (max-width: 400px) {
+    .fa-facebook-square {
+      font-size: 20px; } }
+
+.fa-twitter {
+  font-size: 30px;
+  /* regla para Mobile Styles */ }
+  @media only screen and (max-width: 400px) {
+    .fa-twitter {
+      font-size: 20px; } }
+
+.fa-spotify {
+  font-size: 30px;
+  /* regla para Mobile Styles */ }
+  @media only screen and (max-width: 400px) {
+    .fa-spotify {
+      font-size: 20px; } }
+
+.fa-instagram {
+  font-size: 30px;
+  /* regla para Mobile Styles */ }
+  @media only screen and (max-width: 400px) {
+    .fa-instagram {
+      font-size: 20px; } }
+
+h3 {
+  font-weight: bold;
+  font-family: "roboto", sans-serif !important; }
+
+#ver {
+  font-weight: bold;
+  font-family: "roboto", sans-serif !important; }
+
+h4 {
+  font-family: sans-serif;
+  font-size: 20px; }
+
+#jj {
+  font-size: 20px; }
+
+#formulario {
+  font-size: 15px; }
+
+.reset {
+  font-size: 11px; }
+
+.submit {
+  font-size: 11px; }
+
+.para1 {
+  font-weight: bold; }
+
+#chat {
+  font-size: 25px;
+  /* regla para Mobile Styles */ }
+  @media only screen and (max-width: 400px) {
+    #chat {
+      font-size: 17px; } }
+
+#origen {
+  font-size: 15px; }
+
+.title-tip {
+  font-size: 20px !important;
+  font-weight: bold; }
+
+#tips1 ul {
+  font-family: "roboto", sans-serif !important;
+  font-size: 15px; }
+
+#tips2 ul {
+  font-family: "roboto", sans-serif !important;
+  font-size: 15px; }
+
+#tips3 ul {
+  font-family: "roboto", sans-serif !important;
+  font-size: 15px; }
+
+.form-album {
+  font-family: "roboto", sans-serif !important;
+  font-weight: bold; }
+
+.form-contacto {
+  font-family: "roboto", sans-serif !important; }
+  .form-contacto:hover {
+    font-weight: bold;
+    font-size: 20px; }
+
+.form-tittle {
+  font-family: "roboto", sans-serif !important;
+  font-weight: bold;
+  font-size: 15px; }
+
+.contacto-titulo {
+  font-family: "roboto", sans-serif !important;
+  font-size: 20px; }
+
+footer {
+  font-family: "roboto", sans-serif !important;
+  font-weight: bold; }
+
 body {
   width: 100%;
   display: block;
@@ -97,10 +220,6 @@ header {
 
 .nav-link {
   text-underline-position: none;
-  font-weight: bold;
-  font-size: 15px;
-  font-family: "roboto", sans-serif !important;
-  font-weight: bold !important;
   padding: 8px !important;
   width: 100% !important; }
 
@@ -139,26 +258,19 @@ header {
   min-height: 600px;
   width: 100%; }
   .banner-home .quote {
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 18px;
     padding-left: 255px !important;
-    padding-top: 20px !important;
-    font-style: oblique !important; }
+    padding-top: 20px !important; }
 
 .frase1 {
   word-spacing: 6px !important; }
 
 .frase2 {
-  font-size: 36px !important;
   padding-left: 13px; }
 
 h1 {
   padding-left: 30px !important;
   margin: auto !important;
   padding-top: 80px !important;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 50px;
   line-height: 30px; }
 
 .dropdown-hover:hover .submenu {
@@ -172,19 +284,14 @@ video.jj.mp4 {
   margin: auto; }
 
 .fa-facebook-square {
-  font-size: 30px;
   float: left;
   padding: 5px;
   /* regla para Mobile Styles */ }
   .fa-facebook-square:hover {
     transform: scale(1.05, 1.05);
     transition: ease all 100ms; }
-  @media only screen and (max-width: 400px) {
-    .fa-facebook-square {
-      font-size: 20px; } }
 
 .fa-twitter {
-  font-size: 30px;
   float: left;
   padding: 5px;
   /* regla para Mobile Styles */ }
@@ -194,11 +301,9 @@ video.jj.mp4 {
     background: white; }
   @media only screen and (max-width: 400px) {
     .fa-twitter {
-      font-size: 20px;
       padding: 8px; } }
 
 .fa-spotify {
-  font-size: 30px;
   float: left;
   padding: 5px;
   /* regla para Mobile Styles */ }
@@ -207,11 +312,9 @@ video.jj.mp4 {
     transition: ease all 100ms; }
   @media only screen and (max-width: 400px) {
     .fa-spotify {
-      font-size: 20px;
       padding: 8px; } }
 
 .fa-instagram {
-  font-size: 30px;
   padding: 5px;
   float: left;
   /* regla para Mobile Styles */ }
@@ -220,7 +323,6 @@ video.jj.mp4 {
     transition: ease all 100ms; }
   @media only screen and (max-width: 400px) {
     .fa-instagram {
-      font-size: 20px;
       padding: 8px; } }
 
 a {
@@ -231,9 +333,6 @@ li {
 
 h3 {
   padding-left: 15px !important;
-  color: black;
-  font-weight: bold;
-  font-family: "roboto", sans-serif !important;
   flex-basis: 50%;
   order: 1;
   margin: 0 !important;
@@ -247,8 +346,6 @@ h3 {
 
 #ver {
   text-decoration: underline;
-  font-weight: bold;
-  font-family: "roboto", sans-serif !important;
   padding-bottom: 10px !important;
   flex-basis: 50%;
   order: 2;
@@ -256,15 +353,10 @@ h3 {
   padding-top: 5px; }
 
 h4 {
-  color: #0072BF;
-  font-family: sans-serif;
   line-height: 20px;
-  letter-spacing: 3px;
-  font-size: 20px; }
+  letter-spacing: 3px; }
 
 #jj {
-  color: red;
-  font-size: 20px;
   padding: 5px;
   width: auto; }
 
@@ -272,8 +364,7 @@ h4 {
   border: 1px solid gray;
   margin: auto;
   padding-top: 10px;
-  margin-top: 100px;
-  font-size: 15px; }
+  margin-top: 100px; }
 
 .formulario-borde {
   width: auto; }
@@ -287,14 +378,7 @@ h4 {
   float: left;
   margin-right: 50px; }
 
-.reset {
-  font-size: 11px; }
-
-.submit {
-  font-size: 11px; }
-
 .para1 {
-  font-weight: bold;
   float: left;
   padding: 4px; }
 
@@ -302,13 +386,11 @@ h4 {
   position: fixed;
   right: 15px;
   padding: 5px;
-  color: white;
   background: #43C554;
   border-radius: 100px;
   padding: 8px;
   padding-bottom: 3px;
   z-index: 999;
-  font-size: 25px;
   line-height: normal;
   margin-top: 410px;
   /* regla para Mobile Styles */ }
@@ -318,17 +400,11 @@ h4 {
   @media only screen and (max-width: 400px) {
     #chat {
       position: fixed;
-      top: 220px;
-      font-size: 15px;
-      display: grid;
-      grid-template-columns: 10px 10px;
-      grid-template-rows: 30px 100px;
-      text-align: center;
-      padding: none; } }
-
-#origen {
-  color: gray;
-  font-size: 15px; }
+      padding: 6px;
+      margin-top: 300px; }
+      #chat:hover {
+        transform: scale(1.1);
+        transition: ease all 100ms; } }
 
 section {
   display: block;
@@ -345,11 +421,8 @@ article {
   width: 100%; }
 
 .title-tip {
-  background-color: #82A9BC;
   padding-left: 5px;
   text-align: left;
-  font-size: 20px !important;
-  font-weight: bold;
   width: 100%; }
 
 .article-playa {
@@ -369,8 +442,6 @@ article {
     padding-left: 15px;
     width: 50%;
     float: left;
-    font-family: "roboto", sans-serif !important;
-    font-size: 15px;
     line-height: 30px; }
     #tips1 ul li {
       list-style-type: square !important;
@@ -392,8 +463,6 @@ article {
     padding-left: 15px;
     width: 50%;
     float: left;
-    font-family: "roboto", sans-serif !important;
-    font-size: 15px;
     line-height: 30px; }
     #tips2 ul li {
       list-style-type: square !important;
@@ -408,8 +477,6 @@ article {
     padding-left: 15px;
     width: 50%;
     float: left;
-    font-family: "roboto", sans-serif !important;
-    font-size: 15px;
     line-height: 30px; }
     #tips3 ul li {
       list-style-type: square !important;
@@ -429,8 +496,8 @@ article {
   width: 250px; }
 
 .carousel-tour {
-  width: 60%;
   height: 200px;
+  width: 60%;
   text-align: center; }
 
 .banner-album {
@@ -442,35 +509,22 @@ article {
   width: 100%; }
 
 .carousel-album {
-  width: 25%;
   height: 250px;
+  width: 25%;
   padding-bottom: 30px;
   margin-bottom: 40px;
   padding-right: 10px; }
 
-.carousel-control-next-icon {
-  color: red; }
-
 .form-album {
-  font-family: "roboto", sans-serif !important;
-  font-weight: bold;
   padding-left: 15px;
   padding-bottom: 20px; }
 
 .form-contacto {
-  font-family: "roboto", sans-serif !important;
-  color: red;
   padding-left: 15px;
   padding-bottom: 20px; }
-  .form-contacto:hover {
-    font-weight: bold;
-    font-size: 20px; }
 
 .form-tittle {
-  font-family: "roboto", sans-serif !important;
-  font-weight: bold;
   display: inline-block;
-  font-size: 15px;
   padding-bottom: 15px; }
 
 .item1 {
@@ -523,19 +577,17 @@ article {
     transition: ease all 100ms; }
 
 .img-tour {
-  width: 70%;
   padding-top: 10px;
   text-align: center;
   margin: 0;
   height: 200px;
+  width: 70%;
   padding-bottom: 15px; }
 
 .form-columns {
   padding-top: 30px; }
 
 .contacto-titulo {
-  font-family: "roboto", sans-serif !important;
-  font-size: 20px;
   line-height: 30px;
   padding-bottom: 20px;
   padding-left: 15px; }
@@ -566,9 +618,7 @@ footer {
   background: white;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  font-family: "roboto", sans-serif !important;
-  font-weight: bold; }
+  flex-wrap: wrap; }
   footer .footer-izq {
     flex-basis: 50%;
     text-align: left;

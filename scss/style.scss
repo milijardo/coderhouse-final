@@ -1,7 +1,7 @@
-@mixin sizes($width,$height,$margin)
+@mixin sizes($width,$height)
 {
 height:$height;
-width: calc($width - $margin);
+width: $width;
 }
 
 $color-fondo: #E0E0E0;
@@ -10,6 +10,7 @@ $font-identity: 'roboto', sans-serif;
 
 // Modules and Variables
 @import "color";
+@import "fonts";
 // 
 
 body
@@ -63,10 +64,6 @@ header
 .nav-link
 {
 	text-underline-position: none;
-	font-weight: bold;
-	font-size:15px;
-	font-family: $font-identity !important;
-	font-weight: bold !important;
 	padding:8px !important;
 	width:100% !important;
 }
@@ -121,11 +118,9 @@ header
 	   min-height: 600px; width:100%;
 
 	   .quote{
-	   	font-family: 'Poppins', sans-serif !important;
-	   	font-size: 18px;
+	   	
 	   	padding-left: 255px !important;
 	   	padding-top: 20px !important;
-	   	font-style: oblique !important;
 	   }
 
 }
@@ -135,7 +130,6 @@ header
 }
 
 .frase2{
-	font-size: 36px !important;
 	padding-left:13px;
 }
 
@@ -144,9 +138,6 @@ h1
 	padding-left:30px !important;
 	margin:auto !important;
 	padding-top:80px !important;
-	font-weight: bold;
-	font-family: 'Poppins', sans-serif !important;
-	font-size:50px;
 	line-height: 30px;
 }
 
@@ -187,7 +178,6 @@ video
 
 .fa-facebook-square
 {
-	font-size:30px;
 	float:left;
 	padding: 5px;
 
@@ -202,7 +192,6 @@ video
 
 	@media only screen and (max-width: 400px)
 	{
-		font-size:20px;
 	}
 
 }
@@ -212,7 +201,6 @@ video
 
 .fa-twitter
 {
-	font-size:30px;
 	float:left;
 	padding: 5px;
 
@@ -225,7 +213,6 @@ video
 	/* regla para Mobile Styles */
 	@media only screen and (max-width: 400px)
 	{
-		font-size:20px;
 		padding: 8px;
 	}
 
@@ -235,7 +222,6 @@ video
 
 .fa-spotify
 {
-	font-size:30px;
 	float:left;
 	padding: 5px;
 
@@ -249,7 +235,6 @@ video
 
 	@media only screen and (max-width: 400px)
 	{	
-		font-size:20px;
 		padding: 8px;
 	}
 
@@ -260,7 +245,6 @@ video
 
 .fa-instagram
 {
-	font-size:30px;
 	padding: 5px;
 	float:left;
 
@@ -274,7 +258,6 @@ video
 
 	@media only screen and (max-width: 400px)
 	{
-		font-size:20px;
 		padding: 8px;
 	}
 
@@ -297,9 +280,6 @@ li
 h3
 {
 	padding-left:15px !important;
-	color: black;
-	font-weight: bold;
-	font-family: $font-identity !important;
 	flex-basis: 50%;
 	order:1;
 	margin:0 !important;
@@ -316,8 +296,6 @@ h3
 #ver
 {
 	text-decoration:underline;
-	font-weight: bold;
-	font-family: $font-identity !important;
 	padding-bottom: 10px !important;
 	flex-basis: 50%;
 	order:2;
@@ -327,18 +305,13 @@ h3
 
 h4
 {
-	color:$color-identity;
-	font-family:sans-serif;
 	line-height:20px;
 	letter-spacing:3px;
-	font-size:20px
 }
 
 
 #jj
-{
-	color: red; 
-	font-size:20px;
+{ 
 	padding:5px;
 	width: auto;
 }
@@ -346,11 +319,9 @@ h4
 #formulario
 {
 	border: 1px solid gray;
-
 	margin:auto;
 	padding-top:10px;
 	margin-top:100px;
-	font-size: 15px;
 }
 
 .formulario-borde
@@ -371,18 +342,9 @@ h4
 	margin-right:50px;
 }
 
-.reset
-{
-	font-size: 11px;
-}
-.submit
-{
-	font-size:11px;
-}
 
 .para1
 { 
-	font-weight:bold;
 	float:left;
 	padding:4px;
 }
@@ -393,13 +355,11 @@ h4
 	position:fixed;
 	right:15px;
 	padding:5px;
-	color:white;
 	background:#43C554;
 	border-radius:100px;
 	padding:8px;
 	padding-bottom: 3px;
 	z-index: 999;
-	font-size:25px;
 	line-height:normal;
 	margin-top:410px;
 
@@ -413,23 +373,16 @@ h4
 	@media only screen and (max-width: 400px)
 	{
 		position:fixed;
-		top:220px;
-		font-size:15px;
-		display:grid;  
-   		grid-template-columns: 10px 10px;
-   		grid-template-rows: 30px 100px;
-   		text-align:center;
-   		padding:none;
+		padding:6px;
+		margin-top:300px;
+
+		&:hover{
+		transform: scale(1.1);
+		transition: ease all 100ms;
+		}
 	}
 
 }
-
-
-#origen
-{
-	color:gray; font-size:15px;
-}
-
 
 
 
@@ -454,11 +407,8 @@ article
 
 .title-tip
 {
-	background-color:#82A9BC;
 	padding-left:5px;
 	text-align:left;
-	font-size:20px !important;
-	font-weight: bold;
 	width:100%;
 }	
 
@@ -484,8 +434,6 @@ article
 		padding-left:15px;
 		width:50%;
 		float:left;
-		font-family: $font-identity !important;
-		font-size: 15px;
 		line-height: 30px;
 
 		li{
@@ -520,8 +468,6 @@ article
 		padding-left:15px;
 		width:50%;
 		float:left;
-		font-family: $font-identity !important;
-		font-size: 15px;
 		line-height: 30px;
 
 		li{
@@ -543,8 +489,6 @@ article
 		padding-left:15px;
 		width:50%;
 		float:left;
-		font-family: $font-identity !important;
-		font-size: 15px;
 		line-height: 30px;
 
 		li{
@@ -570,16 +514,13 @@ article
 	padding-top:10px;
 	text-align:center;
 	margin:0;
-	height: 250px;
-	width: 250px;
-
+	@include sizes(250px, 250px)
 }
 
 
 .carousel-tour
 	{
-	width: 60%;
-	height: 200px;
+	@include sizes(60%, 200px)
 	text-align: center;
 }
 
@@ -594,44 +535,27 @@ article
 
 .carousel-album
 {
-	width:25%;
-	height: 250px;
+	@include sizes(25%, 250px)
 	padding-bottom:30px;
 	margin-bottom: 40px;
 	padding-right: 10px;
 }
 
-.carousel-control-next-icon
-{ 
-	color:red;
-}
 
 .form-album
 {
-	font-family: $font-identity !important;
-	font-weight: bold;
 	padding-left: 15px;
 	padding-bottom: 20px;
 }
 
 .form-contacto
 {
-	font-family: $font-identity !important;
-	color:red;
 	padding-left: 15px;
 	padding-bottom: 20px;
-
-	&:hover{
-		font-weight:bold;
-		font-size: 20px;
-	}
 }
 
 .form-tittle{
-	font-family: $font-identity !important;
-	font-weight:bold;
 	display:inline-block;
-	font-size:15px;
 	padding-bottom: 15px;
 }
 
@@ -685,8 +609,7 @@ article
 
 .banner-tour
 {
-	height: 380px;
-	width:100%;
+	@include sizes(100%, 380px)
 	padding-left:43px;
 	padding-right:43px;
 	padding-top:30px;
@@ -734,11 +657,10 @@ article
 		
 .img-tour
 {
-	width:70%;
 	padding-top:10px;
 	text-align:center;
 	margin:0;
-	height: 200px;
+	@include sizes(70%, 200px)
 	padding-bottom: 15px;
 
 }
@@ -751,8 +673,6 @@ article
 
 .contacto-titulo
 {
-	font-family: $font-identity !important;
-	font-size: 20px;
 	line-height: 30px;
 	padding-bottom: 20px;
 	padding-left:15px;
@@ -778,8 +698,7 @@ article
 
 .mensaje-contacto
 {
-	height: 200px;
-	width:70%;
+	@include sizes(70%, 200px)
 }
 
 
@@ -798,8 +717,6 @@ footer
 	display:flex; 
 	flex-direction:row;
 	flex-wrap:wrap;
-	font-family: $font-identity !important;
-	font-weight: bold;
 
 	.footer-izq{
 		flex-basis:50%;
