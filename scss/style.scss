@@ -36,6 +36,12 @@ header
 	text-align: right;
 	order:3;	
 	flex-basis:25%;
+	@media only screen and (max-width: 400px)
+	{
+		order:2;
+		flex-basis:100%;
+		text-align: right;
+	}
 }
 
 #redes
@@ -44,6 +50,12 @@ header
 	display:flex;
 	padding-top:25px;
 	margin:0;
+
+/* regla para Mobile Styles */
+	@media only screen and (max-width: 400px)
+	{
+		padding-top:0 !important;
+	}
 }
 
 .navbar-expand-lg
@@ -73,6 +85,11 @@ header
 {
 	order:2;
 	flex-basis:35%;
+	@media only screen and (max-width: 400px)
+	{
+		flex-basis:100%;
+		order:3;
+	}
 }
 
 .form-inline 
@@ -83,6 +100,14 @@ header
 	text-align:center;
 	float:left;
 	width:100% !important;
+
+
+	/* regla para Mobile Styles */
+	@media only screen and (max-width: 400px)
+	{
+		margin-top:0;
+		padding-bottom: 10px;
+	}
 
 }
 
@@ -108,6 +133,14 @@ header
 .menu-pink
 {
 	padding-top:36px;
+
+/* regla para Mobile Styles */
+	@media only screen and (max-width: 400px)
+	{
+		padding-top:0;
+		width:100%;
+	}
+
 }
 
 .banner-home
@@ -122,6 +155,13 @@ header
 	   	padding-left: 255px !important;
 	   	padding-top: 20px !important;
 	   }
+
+	   @media only screen and (max-width: 400px)
+		{ 
+		background-image: url('../jack-johnson-new-song-86739d85-1f17-4127-a162-0cd6d037a975.jpg');
+	 	background-repeat:no-repeat;
+	 	min-height:40px !important;
+		}
 
 }
 
@@ -139,6 +179,12 @@ h1
 	margin:auto !important;
 	padding-top:80px !important;
 	line-height: 30px;
+
+	@media only screen and (max-width: 400px)
+		{
+			padding-top:30px !important;
+			padding-left:20px !important;
+		}
 }
 
 
@@ -154,7 +200,15 @@ h1
 
 }
 
-
+.menu-col
+{
+/* regla para Mobile Styles */
+	@media only screen and (max-width: 400px)
+	{
+		justify-content: space-around;
+		flex-basis:100%;
+	}
+}
 
 
 #titulo
@@ -504,6 +558,10 @@ article
 	display:flex;
 	flex-direction:row;
 	flex-wrap: wrap;
+	@media only screen and (max-width: 400px)
+		{ 
+			text-align: center !important;
+		}
 }
 
 
@@ -515,6 +573,12 @@ article
 	text-align:center;
 	margin:0;
 	@include sizes(250px, 250px)
+
+	@media only screen and (max-width: 400px)
+			{ 
+				margin:auto !important;
+			}
+					
 }
 
 
@@ -522,6 +586,9 @@ article
 	{
 	@include sizes(60%, 200px)
 	text-align: center;
+	@media only screen and (max-width: 400px)
+			{ width:100%;
+			}
 }
 
 .banner-album
@@ -530,6 +597,11 @@ article
 	background-repeat:no-repeat;
 	background-size:cover;background-position: top;
 	min-height: 450px; width:100%;
+	@media only screen and (max-width: 400px)
+	{
+		min-height: 400px;
+	}
+
 }
 
 
@@ -539,6 +611,16 @@ article
 	padding-bottom:30px;
 	margin-bottom: 40px;
 	padding-right: 10px;
+	border-radius: 20px;
+		overflow: hidden;
+	@media only screen and (max-width: 400px)
+	{
+		@include sizes(100%, 250px)
+		padding-bottom: 15px;
+		margin-bottom: 0 !important;
+		border-radius: 20px;
+		overflow: hidden;
+	}
 }
 
 
@@ -546,6 +628,10 @@ article
 {
 	padding-left: 15px;
 	padding-bottom: 20px;
+	@media only screen and (max-width: 400px)
+	{
+		padding-top:20px;
+	}	
 }
 
 .form-contacto
@@ -571,11 +657,13 @@ article
    					&:last-child 
    					{
      				display: block;
+
    					}
    					&:first-child 
    					{
      				display: none;
    					}
+
 				 }
 }
 
@@ -613,6 +701,12 @@ article
 	padding-left:43px;
 	padding-right:43px;
 	padding-top:30px;
+	@media only screen and (max-width: 400px)
+	{
+		padding-left:0;
+		padding-right:0;
+		@include sizes(100%, 250px)
+	}
 }
 
 
@@ -633,6 +727,11 @@ article
 			&:hover {
 				transform: scale(1.2,1);
 				transition: ease all 100ms;
+				@media only screen and (max-width: 400px)
+				{
+					transform: scale(1.1,1.1);
+					transition: ease all 100ms;
+				}
 			}
 		}
 }
@@ -648,6 +747,11 @@ article
 			&:hover {
 				transform: scale(1.2,1);
 				transition: ease all 100ms;
+				@media only screen and (max-width: 400px)
+				{
+					transform: scale(1.1,1.1);
+					transition: ease all 100ms;
+				}
 			}
 		}
 }
@@ -663,6 +767,11 @@ article
 	@include sizes(70%, 200px)
 	padding-bottom: 15px;
 
+	@media only screen and (max-width: 400px)
+	{
+		@include sizes(100%, 160px)
+
+	}
 }
 
 
@@ -699,6 +808,11 @@ article
 .mensaje-contacto
 {
 	@include sizes(70%, 200px)
+
+	@media only screen and (max-width: 400px)
+				{
+					@include sizes(100%, 200px)
+				}
 }
 
 
@@ -717,6 +831,11 @@ footer
 	display:flex; 
 	flex-direction:row;
 	flex-wrap:wrap;
+
+	@media only screen and (max-width: 400px)
+			{
+				padding-left:0; 
+			}
 
 	.footer-izq{
 		flex-basis:50%;

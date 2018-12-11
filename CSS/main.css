@@ -73,13 +73,17 @@ h4 {
   font-size: 18px;
   font-style: oblique !important; }
 
-.frase2 {
-  font-size: 36px !important; }
-
 h1 {
   font-weight: bold;
   font-family: 'Poppins', sans-serif !important;
   font-size: 50px; }
+  @media only screen and (max-width: 400px) {
+    h1 {
+      font-size: 20px; } }
+
+@media only screen and (max-width: 400px) {
+  fase2 {
+    font-size: 10px; } }
 
 .fa-facebook-square {
   font-size: 30px;
@@ -112,6 +116,9 @@ h1 {
 h3 {
   font-weight: bold;
   font-family: "roboto", sans-serif !important; }
+  @media only screen and (max-width: 400px) {
+    h3 {
+      font-size: 20px !important; } }
 
 #ver {
   font-weight: bold;
@@ -202,12 +209,21 @@ header {
   text-align: right;
   order: 3;
   flex-basis: 25%; }
+  @media only screen and (max-width: 400px) {
+    #redes-sociales {
+      order: 2;
+      flex-basis: 100%;
+      text-align: right; } }
 
 #redes {
   float: right;
   display: flex;
   padding-top: 25px;
-  margin: 0; }
+  margin: 0;
+  /* regla para Mobile Styles */ }
+  @media only screen and (max-width: 400px) {
+    #redes {
+      padding-top: 0 !important; } }
 
 .navbar-expand-lg {
   padding-top: 15px; }
@@ -226,6 +242,10 @@ header {
 .busqueda {
   order: 2;
   flex-basis: 35%; }
+  @media only screen and (max-width: 400px) {
+    .busqueda {
+      flex-basis: 100%;
+      order: 3; } }
 
 .form-inline {
   display: block;
@@ -233,7 +253,12 @@ header {
   margin-top: 50px;
   text-align: center;
   float: left;
-  width: 100% !important; }
+  width: 100% !important;
+  /* regla para Mobile Styles */ }
+  @media only screen and (max-width: 400px) {
+    .form-inline {
+      margin-top: 0;
+      padding-bottom: 10px; } }
 
 .form-control {
   padding: 10px 50px;
@@ -248,7 +273,12 @@ header {
       padding: 2px; } }
 
 .menu-pink {
-  padding-top: 36px; }
+  padding-top: 36px;
+  /* regla para Mobile Styles */ }
+  @media only screen and (max-width: 400px) {
+    .menu-pink {
+      padding-top: 0;
+      width: 100%; } }
 
 .banner-home {
   background-image: url("../jack-johnson-new-song-86739d85-1f17-4127-a162-0cd6d037a975.jpg");
@@ -260,6 +290,11 @@ header {
   .banner-home .quote {
     padding-left: 255px !important;
     padding-top: 20px !important; }
+  @media only screen and (max-width: 400px) {
+    .banner-home {
+      background-image: url("../jack-johnson-new-song-86739d85-1f17-4127-a162-0cd6d037a975.jpg");
+      background-repeat: no-repeat;
+      min-height: 40px !important; } }
 
 .frase1 {
   word-spacing: 6px !important; }
@@ -272,9 +307,20 @@ h1 {
   margin: auto !important;
   padding-top: 80px !important;
   line-height: 30px; }
+  @media only screen and (max-width: 400px) {
+    h1 {
+      padding-top: 30px !important;
+      padding-left: 20px !important; } }
 
 .dropdown-hover:hover .submenu {
   display: block; }
+
+.menu-col {
+  /* regla para Mobile Styles */ }
+  @media only screen and (max-width: 400px) {
+    .menu-col {
+      justify-content: space-around;
+      flex-basis: 100%; } }
 
 #titulo {
   text-align: left; }
@@ -486,6 +532,9 @@ article {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 400px) {
+    .discografia-fotos {
+      text-align: center !important; } }
 
 .img-tapa {
   width: 90%;
@@ -494,11 +543,17 @@ article {
   margin: 0;
   height: 250px;
   width: 250px; }
+  @media only screen and (max-width: 400px) {
+    .img-tapa {
+      margin: auto !important; } }
 
 .carousel-tour {
   height: 200px;
   width: 60%;
   text-align: center; }
+  @media only screen and (max-width: 400px) {
+    .carousel-tour {
+      width: 100%; } }
 
 .banner-album {
   background-image: url("../banner-album.jpg");
@@ -507,17 +562,33 @@ article {
   background-position: top;
   min-height: 450px;
   width: 100%; }
+  @media only screen and (max-width: 400px) {
+    .banner-album {
+      min-height: 400px; } }
 
 .carousel-album {
   height: 250px;
   width: 25%;
   padding-bottom: 30px;
   margin-bottom: 40px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  border-radius: 20px;
+  overflow: hidden; }
+  @media only screen and (max-width: 400px) {
+    .carousel-album {
+      height: 250px;
+      width: 100%;
+      padding-bottom: 15px;
+      margin-bottom: 0 !important;
+      border-radius: 20px;
+      overflow: hidden; } }
 
 .form-album {
   padding-left: 15px;
   padding-bottom: 20px; }
+  @media only screen and (max-width: 400px) {
+    .form-album {
+      padding-top: 20px; } }
 
 .form-contacto {
   padding-left: 15px;
@@ -557,6 +628,12 @@ article {
   padding-left: 43px;
   padding-right: 43px;
   padding-top: 30px; }
+  @media only screen and (max-width: 400px) {
+    .banner-tour {
+      padding-left: 0;
+      padding-right: 0;
+      height: 250px;
+      width: 100%; } }
 
 .tours-sitio {
   text-align: center;
@@ -568,6 +645,10 @@ article {
   .tour1 .tour:hover {
     transform: scale(1.2, 1);
     transition: ease all 100ms; }
+    @media only screen and (max-width: 400px) {
+      .tour1 .tour:hover {
+        transform: scale(1.1, 1.1);
+        transition: ease all 100ms; } }
 
 .tour2 {
   width: 50%;
@@ -575,6 +656,10 @@ article {
   .tour2 .tour:hover {
     transform: scale(1.2, 1);
     transition: ease all 100ms; }
+    @media only screen and (max-width: 400px) {
+      .tour2 .tour:hover {
+        transform: scale(1.1, 1.1);
+        transition: ease all 100ms; } }
 
 .img-tour {
   padding-top: 10px;
@@ -583,6 +668,10 @@ article {
   height: 200px;
   width: 70%;
   padding-bottom: 15px; }
+  @media only screen and (max-width: 400px) {
+    .img-tour {
+      height: 160px;
+      width: 100%; } }
 
 .form-columns {
   padding-top: 30px; }
@@ -606,6 +695,10 @@ article {
 .mensaje-contacto {
   height: 200px;
   width: 70%; }
+  @media only screen and (max-width: 400px) {
+    .mensaje-contacto {
+      height: 200px;
+      width: 100%; } }
 
 .contact {
   margin-left: 15px; }
@@ -619,6 +712,9 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 400px) {
+    footer {
+      padding-left: 0; } }
   footer .footer-izq {
     flex-basis: 50%;
     text-align: left;

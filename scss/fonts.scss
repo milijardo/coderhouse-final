@@ -20,16 +20,24 @@ $font-identity: 'roboto', sans-serif;
 
 
 
-.frase2
-{
-	font-size: 36px !important;
-}
 
 h1
 {
 	font-weight: bold;
 	font-family: 'Poppins', sans-serif !important;
 	font-size:50px;
+	@media only screen and (max-width: 400px)
+		{ 
+			font-size:20px;
+		}
+}
+
+fase2
+{
+	@media only screen and (max-width: 400px)
+		{ 
+			font-size:10px;
+		}
 }
 
 
@@ -90,6 +98,10 @@ h3
 {
 	font-weight: bold;
 	font-family: $font-identity !important;
+	@media only screen and (max-width: 400px)
+		{ 
+			font-size:20px !important;
+		}
 }
 
 
