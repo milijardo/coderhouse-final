@@ -1,0 +1,119 @@
+$color-fondo: #E0E0E0;
+$color-identity: #0072BF;
+
+body
+{
+	background-color: $color-fondo;
+}
+
+.navbar-expand-lg
+{
+	color: $color-identity !important;
+ 
+}
+
+
+.nav-link
+{
+	color: $color-identity !important;
+}
+
+
+.color-search
+{	background:none;
+	border-color: $color-identity;
+	color: $color-identity;
+
+	&:active
+	{ 	background-color: $color-identity;
+		box-shadow: none !important;
+	}
+
+	&:hover
+	{ 	background-color: $color-identity !important;
+		border-color: $color-identity !important;
+	}
+
+
+}
+
+.fa-facebook-square
+{
+	color:blue;
+	&:hover{
+			background:white;
+	}
+}
+
+
+.fa-twitter
+{
+	color:#00A4CC;
+	&:hover{
+			background:white;
+	}
+}
+
+
+.fa-spotify
+{
+	color:#9ACC2F;
+	&:hover{
+			background:white;
+	}
+}
+
+.fa-instagram
+{	
+	color: #CA2267;
+	&:hover{
+			background:white;
+	}
+}
+
+h3
+{
+	color: black;
+}
+
+h4
+{
+	color:$color-identity;
+}
+
+#jj
+{
+	color: red; 
+}
+
+#chat
+{
+	color:white;
+}
+
+#origen
+{
+	color:gray; 
+}
+
+.title-tip
+{
+	background-color:#82A9BC;
+}
+
+.carousel-control-next-icon
+{ 
+	color:red;
+}
+
+
+.form-contacto
+{
+	color:red;
+}
+
+
+
+
+
+

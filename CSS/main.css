@@ -1,5 +1,68 @@
 body {
-  background-color: #E0E0E0;
+  background-color: #E0E0E0; }
+
+.navbar-expand-lg {
+  color: #0072BF !important; }
+
+.nav-link {
+  color: #0072BF !important; }
+
+.color-search {
+  background: none;
+  border-color: #0072BF;
+  color: #0072BF; }
+  .color-search:active {
+    background-color: #0072BF;
+    box-shadow: none !important; }
+  .color-search:hover {
+    background-color: #0072BF !important;
+    border-color: #0072BF !important; }
+
+.fa-facebook-square {
+  color: blue; }
+  .fa-facebook-square:hover {
+    background: white; }
+
+.fa-twitter {
+  color: #00A4CC; }
+  .fa-twitter:hover {
+    background: white; }
+
+.fa-spotify {
+  color: #9ACC2F; }
+  .fa-spotify:hover {
+    background: white; }
+
+.fa-instagram {
+  color: #CA2267; }
+  .fa-instagram:hover {
+    background: white; }
+
+h3 {
+  color: black; }
+
+h4 {
+  color: #0072BF; }
+
+#jj {
+  color: red; }
+
+#chat {
+  color: white; }
+
+#origen {
+  color: gray; }
+
+.title-tip {
+  background-color: #82A9BC; }
+
+.carousel-control-next-icon {
+  color: red; }
+
+.form-contacto {
+  color: red; }
+
+body {
   width: 100%;
   display: block;
   margin: 0; }
@@ -24,8 +87,7 @@ header {
   margin: 0; }
 
 .navbar-expand-lg {
-  padding-top: 15px;
-  color: #0072BF !important; }
+  padding-top: 15px; }
 
 .iconguitar {
   height: 80px;
@@ -34,11 +96,10 @@ header {
   padding-top: 2px !important; }
 
 .nav-link {
-  color: #0072BF !important;
   text-underline-position: none;
   font-weight: bold;
   font-size: 15px;
-  font-family: 'roboto', sans-serif !important;
+  font-family: "roboto", sans-serif !important;
   font-weight: bold !important;
   padding: 8px !important;
   width: 100% !important; }
@@ -66,17 +127,6 @@ header {
       width: 8 0% !important;
       z-index: 2;
       padding: 2px; } }
-
-.color-search {
-  background: none;
-  border-color: #0072BF;
-  color: #0072BF; }
-  .color-search:active {
-    background-color: #0072BF;
-    box-shadow: none !important; }
-  .color-search:hover {
-    background-color: #0072BF !important;
-    border-color: #0072BF !important; }
 
 .menu-pink {
   padding-top: 36px; }
@@ -123,21 +173,18 @@ video.jj.mp4 {
 
 .fa-facebook-square {
   font-size: 30px;
-  color: blue;
   float: left;
   padding: 5px;
   /* regla para Mobile Styles */ }
   .fa-facebook-square:hover {
     transform: scale(1.05, 1.05);
-    transition: ease all 100ms;
-    background: white; }
+    transition: ease all 100ms; }
   @media only screen and (max-width: 400px) {
     .fa-facebook-square {
       font-size: 20px; } }
 
 .fa-twitter {
   font-size: 30px;
-  color: #00A4CC;
   float: left;
   padding: 5px;
   /* regla para Mobile Styles */ }
@@ -152,14 +199,12 @@ video.jj.mp4 {
 
 .fa-spotify {
   font-size: 30px;
-  color: #9ACC2F;
   float: left;
   padding: 5px;
   /* regla para Mobile Styles */ }
   .fa-spotify:hover {
     transform: scale(1.05, 1.05);
-    transition: ease all 100ms;
-    background: white; }
+    transition: ease all 100ms; }
   @media only screen and (max-width: 400px) {
     .fa-spotify {
       font-size: 20px;
@@ -167,14 +212,12 @@ video.jj.mp4 {
 
 .fa-instagram {
   font-size: 30px;
-  color: #CA2267;
   padding: 5px;
   float: left;
   /* regla para Mobile Styles */ }
   .fa-instagram:hover {
     transform: scale(1.05, 1.05);
-    transition: ease all 100ms;
-    background: white; }
+    transition: ease all 100ms; }
   @media only screen and (max-width: 400px) {
     .fa-instagram {
       font-size: 20px;
@@ -190,7 +233,7 @@ h3 {
   padding-left: 15px !important;
   color: black;
   font-weight: bold;
-  font-family: 'roboto', sans-serif !important;
+  font-family: "roboto", sans-serif !important;
   flex-basis: 50%;
   order: 1;
   margin: 0 !important;
@@ -205,7 +248,7 @@ h3 {
 #ver {
   text-decoration: underline;
   font-weight: bold;
-  font-family: 'roboto', sans-serif !important;
+  font-family: "roboto", sans-serif !important;
   padding-bottom: 10px !important;
   flex-basis: 50%;
   order: 2;
@@ -326,7 +369,7 @@ article {
     padding-left: 15px;
     width: 50%;
     float: left;
-    font-family: 'roboto', sans-serif !important;
+    font-family: "roboto", sans-serif !important;
     font-size: 15px;
     line-height: 30px; }
     #tips1 ul li {
@@ -349,7 +392,7 @@ article {
     padding-left: 15px;
     width: 50%;
     float: left;
-    font-family: 'roboto', sans-serif !important;
+    font-family: "roboto", sans-serif !important;
     font-size: 15px;
     line-height: 30px; }
     #tips2 ul li {
@@ -365,7 +408,7 @@ article {
     padding-left: 15px;
     width: 50%;
     float: left;
-    font-family: 'roboto', sans-serif !important;
+    font-family: "roboto", sans-serif !important;
     font-size: 15px;
     line-height: 30px; }
     #tips3 ul li {
@@ -409,13 +452,13 @@ article {
   color: red; }
 
 .form-album {
-  font-family: 'roboto', sans-serif !important;
+  font-family: "roboto", sans-serif !important;
   font-weight: bold;
   padding-left: 15px;
   padding-bottom: 20px; }
 
 .form-contacto {
-  font-family: 'roboto', sans-serif !important;
+  font-family: "roboto", sans-serif !important;
   color: red;
   padding-left: 15px;
   padding-bottom: 20px; }
@@ -424,7 +467,7 @@ article {
     font-size: 20px; }
 
 .form-tittle {
-  font-family: 'roboto', sans-serif !important;
+  font-family: "roboto", sans-serif !important;
   font-weight: bold;
   display: inline-block;
   font-size: 15px;
@@ -491,7 +534,7 @@ article {
   padding-top: 30px; }
 
 .contacto-titulo {
-  font-family: 'roboto', sans-serif !important;
+  font-family: "roboto", sans-serif !important;
   font-size: 20px;
   line-height: 30px;
   padding-bottom: 20px;
@@ -524,7 +567,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-family: 'roboto', sans-serif !important;
+  font-family: "roboto", sans-serif !important;
   font-weight: bold; }
   footer .footer-izq {
     flex-basis: 50%;

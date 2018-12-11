@@ -4,10 +4,16 @@ height:$height;
 width: calc($width - $margin);
 }
 
+$color-fondo: #E0E0E0;
+$color-identity: #0072BF;
+$font-identity: 'roboto', sans-serif;
+
+// Modules and Variables
+@import "color";
+// 
 
 body
 {
-	background-color:#E0E0E0;
 	width:100%;
 	display:block;
 	margin:0;
@@ -42,7 +48,6 @@ header
 .navbar-expand-lg
 {
 	padding-top:15px;
-	color:#0072BF !important;
  
 }
 
@@ -57,11 +62,10 @@ header
 
 .nav-link
 {
-	color:#0072BF !important;
 	text-underline-position: none;
 	font-weight: bold;
 	font-size:15px;
-	font-family: 'roboto', sans-serif !important;
+	font-family: $font-identity !important;
 	font-weight: bold !important;
 	padding:8px !important;
 	width:100% !important;
@@ -102,25 +106,6 @@ header
 	}
 
 }
-
-.color-search
-{	background:none;
-	border-color:#0072BF;
-	color:#0072BF;
-
-	&:active
-	{ 	background-color: #0072BF;
-		box-shadow: none !important;
-	}
-
-	&:hover
-	{ 	background-color: #0072BF !important;
-		border-color: #0072BF !important;
-	}
-
-
-}
-
 
 
 .menu-pink
@@ -203,14 +188,13 @@ video
 .fa-facebook-square
 {
 	font-size:30px;
-	color: blue;
 	float:left;
 	padding: 5px;
 
 	&:hover {
 		transform: scale(1.05,1.05);
 		transition: ease all 100ms;
-		background:white;
+		
 	}
 
 
@@ -229,7 +213,6 @@ video
 .fa-twitter
 {
 	font-size:30px;
-	color:#00A4CC;
 	float:left;
 	padding: 5px;
 
@@ -253,14 +236,12 @@ video
 .fa-spotify
 {
 	font-size:30px;
-	color:#9ACC2F;
 	float:left;
 	padding: 5px;
 
 	&:hover {
 		transform: scale(1.05,1.05);
 		transition: ease all 100ms;
-		background:white;
 	}
 
 
@@ -280,14 +261,12 @@ video
 .fa-instagram
 {
 	font-size:30px;
-	color: #CA2267;
 	padding: 5px;
 	float:left;
 
 	&:hover {
 		transform: scale(1.05,1.05);
 		transition: ease all 100ms;
-		background:white;
 	}
 
 
@@ -320,7 +299,7 @@ h3
 	padding-left:15px !important;
 	color: black;
 	font-weight: bold;
-	font-family: 'roboto', sans-serif !important;
+	font-family: $font-identity !important;
 	flex-basis: 50%;
 	order:1;
 	margin:0 !important;
@@ -338,7 +317,7 @@ h3
 {
 	text-decoration:underline;
 	font-weight: bold;
-	font-family: 'roboto', sans-serif !important;
+	font-family: $font-identity !important;
 	padding-bottom: 10px !important;
 	flex-basis: 50%;
 	order:2;
@@ -348,7 +327,7 @@ h3
 
 h4
 {
-	color:#0072BF;
+	color:$color-identity;
 	font-family:sans-serif;
 	line-height:20px;
 	letter-spacing:3px;
@@ -505,7 +484,7 @@ article
 		padding-left:15px;
 		width:50%;
 		float:left;
-		font-family: 'roboto', sans-serif !important;
+		font-family: $font-identity !important;
 		font-size: 15px;
 		line-height: 30px;
 
@@ -541,7 +520,7 @@ article
 		padding-left:15px;
 		width:50%;
 		float:left;
-		font-family: 'roboto', sans-serif !important;
+		font-family: $font-identity !important;
 		font-size: 15px;
 		line-height: 30px;
 
@@ -564,7 +543,7 @@ article
 		padding-left:15px;
 		width:50%;
 		float:left;
-		font-family: 'roboto', sans-serif !important;
+		font-family: $font-identity !important;
 		font-size: 15px;
 		line-height: 30px;
 
@@ -629,7 +608,7 @@ article
 
 .form-album
 {
-	font-family: 'roboto', sans-serif !important;
+	font-family: $font-identity !important;
 	font-weight: bold;
 	padding-left: 15px;
 	padding-bottom: 20px;
@@ -637,7 +616,7 @@ article
 
 .form-contacto
 {
-	font-family: 'roboto', sans-serif !important;
+	font-family: $font-identity !important;
 	color:red;
 	padding-left: 15px;
 	padding-bottom: 20px;
@@ -649,7 +628,7 @@ article
 }
 
 .form-tittle{
-	font-family: 'roboto', sans-serif !important;
+	font-family: $font-identity !important;
 	font-weight:bold;
 	display:inline-block;
 	font-size:15px;
@@ -772,7 +751,7 @@ article
 
 .contacto-titulo
 {
-	font-family: 'roboto', sans-serif !important;
+	font-family: $font-identity !important;
 	font-size: 20px;
 	line-height: 30px;
 	padding-bottom: 20px;
@@ -819,7 +798,7 @@ footer
 	display:flex; 
 	flex-direction:row;
 	flex-wrap:wrap;
-	font-family: 'roboto', sans-serif !important;
+	font-family: $font-identity !important;
 	font-weight: bold;
 
 	.footer-izq{
