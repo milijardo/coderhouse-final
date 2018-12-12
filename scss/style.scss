@@ -119,6 +119,8 @@ header
     vertical-align: middle;
     width:70% !important;
 
+
+
 @media only screen and (max-width: 400px)
 	{
 		width:8
@@ -246,6 +248,7 @@ video
 
 	@media only screen and (max-width: 400px)
 	{
+		padding:6px;
 	}
 
 }
@@ -267,7 +270,7 @@ video
 	/* regla para Mobile Styles */
 	@media only screen and (max-width: 400px)
 	{
-		padding: 8px;
+		padding: 6px;
 	}
 
 }
@@ -289,7 +292,7 @@ video
 
 	@media only screen and (max-width: 400px)
 	{	
-		padding: 8px;
+		padding: 6px;
 	}
 
 }
@@ -312,7 +315,7 @@ video
 
 	@media only screen and (max-width: 400px)
 	{
-		padding: 8px;
+		padding: 6px;
 	}
 
 }
@@ -396,6 +399,13 @@ h4
 	margin-right:50px;
 }
 
+.col-md-6
+{
+	@media (min-width: 768px)
+	{
+		max-width: 25%;
+	}
+}
 
 .para1
 { 
@@ -638,6 +648,42 @@ article
 {
 	padding-left: 15px;
 	padding-bottom: 20px;
+}
+
+.contenedor-modificado{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 300px;
+    margin-left: 0;
+
+}
+
+.foto-contacto
+{
+	padding-top:60px;
+}
+
+.arroba
+{
+	margin-right:-50px;
+	
+	@media only screen and (max-width: 400px)
+	{
+		margin-right:53px;
+		padding-left:0 !important;
+	}
+}
+
+.provincia
+{
+	padding-top:0 !important;
+}
+
+
+.campo
+{
+	padding-bottom: 10px;
 }
 
 .form-tittle{

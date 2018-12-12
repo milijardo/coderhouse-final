@@ -336,6 +336,9 @@ video.jj.mp4 {
   .fa-facebook-square:hover {
     transform: scale(1.05, 1.05);
     transition: ease all 100ms; }
+  @media only screen and (max-width: 400px) {
+    .fa-facebook-square {
+      padding: 6px; } }
 
 .fa-twitter {
   float: left;
@@ -347,7 +350,7 @@ video.jj.mp4 {
     background: white; }
   @media only screen and (max-width: 400px) {
     .fa-twitter {
-      padding: 8px; } }
+      padding: 6px; } }
 
 .fa-spotify {
   float: left;
@@ -358,7 +361,7 @@ video.jj.mp4 {
     transition: ease all 100ms; }
   @media only screen and (max-width: 400px) {
     .fa-spotify {
-      padding: 8px; } }
+      padding: 6px; } }
 
 .fa-instagram {
   padding: 5px;
@@ -369,7 +372,7 @@ video.jj.mp4 {
     transition: ease all 100ms; }
   @media only screen and (max-width: 400px) {
     .fa-instagram {
-      padding: 8px; } }
+      padding: 6px; } }
 
 a {
   text-decoration: none; }
@@ -423,6 +426,10 @@ h4 {
   display: inline-block;
   float: left;
   margin-right: 50px; }
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    max-width: 25%; } }
 
 .para1 {
   float: left;
@@ -593,6 +600,29 @@ article {
 .form-contacto {
   padding-left: 15px;
   padding-bottom: 20px; }
+
+.contenedor-modificado {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 300px;
+  margin-left: 0; }
+
+.foto-contacto {
+  padding-top: 60px; }
+
+.arroba {
+  margin-right: -50px; }
+  @media only screen and (max-width: 400px) {
+    .arroba {
+      margin-right: 53px;
+      padding-left: 0 !important; } }
+
+.provincia {
+  padding-top: 0 !important; }
+
+.campo {
+  padding-bottom: 10px; }
 
 .form-tittle {
   display: inline-block;
